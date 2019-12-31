@@ -1,0 +1,25 @@
+{
+  "name": "Startup-Proyect",
+  "version": "1.0.0",
+  "description": "Start config aplication whit WebPack",
+  "main": "main.js",
+  "scripts": {
+    "dev": "npx webpack-dev-server -d",
+    "build": "npx webpack -p"
+  },
+  "keywords": [],
+  "author": "DigitalSolutions('JonaDev')",
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^3.4.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.1.2",
+    "uuid": "^3.3.3",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  }
+}
