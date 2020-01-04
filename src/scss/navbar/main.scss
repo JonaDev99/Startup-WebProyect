@@ -2,8 +2,9 @@
 @import './hero';
 @import './header';
 @import './media';
+@import './animations';
 
-*{
+*, *::before, *::after{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -14,6 +15,7 @@ body{
 .container{
     width: 80%;
     margin: 2rem auto;
+    //border: 1px solid red;
     
     p{
         margin: 1rem 0;

@@ -5,11 +5,10 @@
     align-items: center;
     height: 65px;
     width: 100vw;
-    padding: 0 10vw;
+    padding: 0 1vw;
     padding: #000;
     z-index: 1;
     //Este es el tamaño y color de la navbar
-    height: 65px;
     background: rgba(0,0,0,0.9);
     color: #fff;
     transition: 0.4s ease-out;
@@ -24,6 +23,21 @@
         color: #fff;
 
         .nav-link{
+            transition: 
+            opacity .4s ease-in-out,
+            transform .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            &:nth-of-type(2){
+                transition-delay: .1s;
+            }
+            &:nth-of-type(3){
+                transition-delay: .2s;
+            }
+            &:nth-of-type(4){
+                transition-delay: .3s;
+            }
+            &:nth-of-type(5){
+                transition-delay: .4s;
+            }
 
             a{
                 margin: .2rem;
@@ -39,7 +53,7 @@
         padding: 26px 10px;
         cursor: pointer;
         z-index: 1;
-        //display: none;
+        display: none;
 
         &__line{
             display: block;
@@ -68,7 +82,8 @@
         }
     }
     .menu-btn{
-        display: none;
+        position: absolute;
+        top: -100px;
     }
 
     &.scrolled{
