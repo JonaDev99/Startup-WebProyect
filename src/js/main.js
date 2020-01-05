@@ -2,7 +2,6 @@
 import '../scss/style.scss';
 
 const header = document.querySelector('.main-header');
-const menuBtn = document.querySelector('.menu-btn');
 window.addEventListener('scroll', () => {
     const scrollPos = window.scrollY;
     if(scrollPos > 0){
@@ -13,23 +12,18 @@ window.addEventListener('scroll', () => {
     }
 });
 
-/**const clas = window.document.getElementsByClassName("nav-links");
-window.addEventListener('click', (e) => {
-  if(e.clas[0]==clas[0]){
-      console.log("click en la clase");
-  }
-});
- */
-
-
-
-/*
-const menu = window.document.getElementById("menu-btn");
-window.addEventListener("click", (e)=> {
-    console.log("clicks");
-    if(e.menu==menu){
-        console.log("clicks"+ menu);
-        menu.checked = false;
-    }    
-},false);
-*/
+const menuBtn = window.document.getElementById("menu-btn");
+var cont = 0;
+window.addEventListener('click', (e) => {   
+    if (document.getElementById('menu-btn').contains(e.target)){
+        cont ++;
+        console.log("Click dentro");
+        if(cont%2 == 0){
+            menuBtn.checked = false;
+            cont = 0;
+        }
+    } else{
+        console.log("Click fuera");
+        menuBtn.checked = false;
+    }
+  });
