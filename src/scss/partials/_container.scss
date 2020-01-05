@@ -1,0 +1,17 @@
+.container{
+    width: 90%;
+    margin: 1rem auto;
+    padding: 10px;
+    background: $smoke;
+    
+    .content{
+        background: $whitesmoke;
+
+        .title{
+        text-align: center;
+        }
+    }
+    p{
+        margin-top: 1rem;
+    }
+}

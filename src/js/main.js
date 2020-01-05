@@ -1,6 +1,6 @@
 //importamos el archivo de css
 import '../scss/style.scss';
-
+//Control de scroll en el header
 const header = document.querySelector('.main-header');
 window.addEventListener('scroll', () => {
     const scrollPos = window.scrollY;
@@ -11,7 +11,7 @@ window.addEventListener('scroll', () => {
         header.classList.remove('scrolled');
     }
 });
-
+//Control de apertura y cierre de header
 const menuBtn = window.document.getElementById("menu-btn");
 var cont = 0;
 window.addEventListener('click', (e) => {   

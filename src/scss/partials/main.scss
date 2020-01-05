@@ -3,6 +3,8 @@
 @import './header';
 @import './media';
 @import './animations';
+@import './colors';
+@import './container';
 
 *, *::before, *::after{
     box-sizing: border-box;
@@ -11,15 +13,6 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
-}
-.container{
-    width: 80%;
-    margin: 2rem auto;
-    //border: 1px solid red;
-    
-    p{
-        margin: 1rem 0;
-    }
 }
 
 .logo{
