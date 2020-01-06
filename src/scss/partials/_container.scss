@@ -1,11 +1,38 @@
 .container{
+    position: relative;
     width: 90%;
-    margin: 1rem auto;
+    margin: 3rem auto 0 ;
     padding: 10px;
-    background: $smoke;
+    display: grid;
+    grid-template-columns: repeat(auto-fill);
+    text-align: center;
     
+    .box{
+        position: relative;
+        background: #fff;
+        display: flex;
+
+        &:before{
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: $darkgray;
+            transform: skew(2deg, .5deg);
+            z-index: -1;
+
+        }
+    }
+
     .content{
-        background: $whitesmoke;
+        i{
+            display: flex;
+            justify-content: center;
+            color: $salmon;
+            font-size: 5rem;
+        }
 
         .title{
         text-align: center;
@@ -14,4 +41,81 @@
     p{
         margin-top: 1rem;
     }
+}
+
+.mul-container{ 
+    position: relative;
+    width: 90%;
+    display: grid;
+    margin: 3rem auto 0;
+    //Este valor de 260px se modificara para el responsive
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 50px 40px;
+
+    .box{
+        position: relative;
+        background: #fff;
+        display: flex;
+
+        &:before{
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: $darkgray;
+            transform: skew(2deg, 2deg);
+            z-index: -1;
+
+        }
+
+       
+        .content{
+
+            i{
+                display: flex;
+                justify-content: center;
+                color: $salmon;
+                font-size: 3rem;
+            }
+
+            h2{
+                margin: 0 0 10px;
+                padding: 0;
+                text-align: center;
+            }
+
+            p{
+                text-align: center;
+            }
+
+            a{
+                position: relative;
+                margin: 20px 0 0;
+                padding: 10px 20px;
+                text-decoration: none;
+                border: 1px solid $darkgray;
+                display: inline-block;
+                transition: 0.5s;
+                color: $darkgray;
+                opacity: 1;
+
+                &:hover{
+                    background: $darkgray;
+                    color: #fff;
+                    transition: 1s;
+        }
+            }
+
+
+        }
+    }
+}
+.content{
+    position: relative;
+    padding: 20px;
+
+
 }

@@ -11,6 +11,7 @@ module.exports = {
     },
     //Establecemos el puerto en el cual se ejecutara nuestro liveServer
     devServer: {
+        host: '192.168.100.90',
         port: 5000
     },
     //importamos el modulo de los archivos scss

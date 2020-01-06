@@ -96,7 +96,7 @@
     /***************/
 
     //_hero.scss
-    .hero{
+    .hero-head, .hero-code{
         height: 40vh;
         h1{
             font-size: .9rem;
@@ -106,15 +106,47 @@
         
     //_container.scss
     .container{
-
-        .content{
-
-            .title{
-                font-size: .9rem;
+        .box{
+            .content{
+                .title{
+                    font-size: 1rem;
+                }
             }
         }
-}
+    }
+    /***************/
+    /*container.css*/
+    .mul-container{
+        .box{
+            .content{
+                h2{
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
     /***************/
 
+    /*headline.scss*/
+    .head-line{
+        h1{
+            &::before, &::after{
+                width: 20%;
+            }
+        }
+    }
+    /***************/
+    
+    @media screen and (min-width: 760px){
+        /*headline.scss*/
+        .head-line{
+            h1{
+                &::before, &::after{
+                    width: 30%;
+                }
+            }
+        }
+        /***************/
+        }
 
 }
