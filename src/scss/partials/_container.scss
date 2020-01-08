@@ -27,11 +27,18 @@
     }
 
     .content{
+
+        .contact{
+            i{
+                color: $salmon;
+                font-size: 3rem;
+            }
+        }
         i{
             display: flex;
             justify-content: center;
             color: $salmon;
-            font-size: 5rem;
+            font-size: 4rem;
         }
 
         .title{
