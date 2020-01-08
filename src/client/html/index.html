@@ -209,7 +209,7 @@
     <!--Form datos ¡¡¡¡AUN NO ES RESPONSIVE!!!!-->
     <div class="container">
         <h2>Tambien puedes dejarnos tus datos y nosotros nos pondremos en contacto contigo</h2>
-        <form action="" method="GET">
+        <form action="/send-email" method="POST">
             <div>
                 <p for="">Nombre:</p>
                 <input type="text" name="name" class="text-input" placeholder="Ingrese su nombre" required>
@@ -225,10 +225,10 @@
             <div>
                 <p for="">Giro de la empresa:</p>
                 <select name="enterprice" required>
-                    <option value="">Tecnologico</option>
-                    <option value="">Ventas</option>
-                    <option value="">Ropa</option>
-                    <option value="">Alimentos</option>
+                    <option value="Tecnologico">Tecnologico</option>
+                    <option value="Ventas">Ventas</option>
+                    <option value="Ropa">Ropa</option>
+                    <option value="Alimentos">Alimentos</option>
                 </select>
             </div>
             <div>

@@ -34,8 +34,9 @@
             </li>
         </ul>
     </header>
-    <div class="hero" id="inicio">
-        <h1 id="acerca-de">Somos una empresa mexicana especializada en las soluciones digitales</h1>
+    <!--Hero con texto bajo el navbar-->
+    <div class="hero-head" id="inicio">
+        <h1 id="acerca-de">Somos una empresa mexicana especializada en las soluciones digitales</h1> 
     </div>
 <!--Contenedor acerca de nosotros-->
     <div class="container" >
@@ -51,6 +52,11 @@
                 </div>
             </div>
         </div>
+    </div>
+    
+    <!--Hero imagen codigo con texto bajo el navbar-->
+    <div class="hero-code" >
+        <h1>"Nos encantaria formar parte de tu equipo de trabajo"</h1>
     </div>
 <!--Contenedor Servicios-->
     <div class="container">
@@ -128,7 +134,7 @@
                 <div class="content">
                     <i class="fas fa-magic"></i>
                     <h2>Diseño</h2>
-                    <p id="etapas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, perspiciatis.</p id="etapas">
+                    <p id="etapas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, perspiciatis.</p>
                     <a href="#">Ver mas</a>
                 </div>
             </div>
@@ -174,12 +180,71 @@
             </div>
         </div>
     </div>
+    <!--Hero imagen codigo con texto bajo el navbar-->
+    <div class="hero-code">
+        <h1>Tu satisfacción es nuestro principal objetivo</h1>
+    </div>
     <!--Contenedor contacto-->
     <div class="container">
         <div class="head-line">
             <h1>Contacto</h1>
         </div>
+        <div class="container">
+            <div class="box">
+                <div class="content">
+                    <i class="fas fa-star-of-life"></i>
+                    <h2 class="title">Contamos con soporte 24/7</h2>
+                    <div class="contact">
+                        <p>Via Whatsapp y telefonica</p>
+                        <i class="fab fa-whatsapp"></i>
+                        
+                        33-22-24-78-44
+                    </div>
+                    <p>Para nosotros siempre es un placer atenderte y brindarte nuestra mejor asistencia personalizada, solucionando todos tus inconvenientes de manera eficiente y veloz.</p>    
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!--Form datos ¡¡¡¡AUN NO ES RESPONSIVE!!!!-->
+    <div class="container">
+        <h2>Tambien puedes dejarnos tus datos y nosotros nos pondremos en contacto contigo</h2>
+        <form action="" method="GET">
+            <div>
+                <p for="">Nombre:</p>
+                <input type="text" name="name" class="text-input" placeholder="Ingrese su nombre" required>
+            </div>
+            <div>
+                <p for="">Correo:</p>
+                <input type="email" name="email" class="text-input" placeholder="Ingrese su correo electronico" required>
+            </div>
+            <div>
+                <p for="">Telefono:</p>
+                <input type="number" name="phone" class="text-input" placeholder="Ingrese su numero telefonico" required>
+            </div>
+            <div>
+                <p for="">Giro de la empresa:</p>
+                <select name="enterprice" required>
+                    <option value="">Tecnologico</option>
+                    <option value="">Ventas</option>
+                    <option value="">Ropa</option>
+                    <option value="">Alimentos</option>
+                </select>
+            </div>
+            <div>
+                <p for="">Describa de manera breve su proyecto a continuación:</p>
+                <textarea name="description"></textarea>
+            </div>
+            <input type="submit" value="Confirmar">
+        </form>
+    </div>
+
+    <footer>
+        <div>
+            <label> <b>&copy; 2020 &nbsp;</b>DigitalSupport&nbsp;</label>
+            <b>Todos los derechos reservados</b>
+        </div>
+    </footer>
 
 <script type="text/javascript" src="bundle.js"></script></body>
 </html>
