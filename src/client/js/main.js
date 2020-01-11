@@ -1,5 +1,6 @@
 //importamos el archivo de css
 import '../scss/style.scss';
+
 //Control de scroll en el header
 const header = document.querySelector('.main-header');
 window.addEventListener('scroll', () => {
@@ -29,5 +30,3 @@ window.addEventListener('click', (e) => {
   });
   var getContent = document.getElementsByClassName('focus');
     //getContent[0].style.background = 'red';
- 
-    
