@@ -43,7 +43,7 @@ router.post('/send-email', async (req,res) =>{
     console.log("Mesagge sent", info.messageId);
     
     //res.send(contentHMTL);
-    res.redirect('/);
+    res.redirect('/');
 });
 
 module.exports = router;
