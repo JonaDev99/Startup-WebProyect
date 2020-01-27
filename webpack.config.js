@@ -11,10 +11,10 @@ module.exports = {
         filename: 'bundle.js'
     },
     //Establecemos el puerto en el cual se ejecutara nuestro liveServer
-    /*devServer: {
+    devServer: {
         host: '192.168.100.90',
         port: 5000
-    },*/
+    },
     //importamos el modulo de los archivos scss
     module: {
         rules:[

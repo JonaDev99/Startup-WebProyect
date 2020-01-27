@@ -1,30 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Jonatan Contreras">
+    <meta name="keywords" content="Diseño web,Soporte,Instalacion,Mantenimiento,Tecnologia">
+    <meta name="description" content="Expertos en ofrecerte las mejores soluciones digitales sea cual sea su necesidad. Ofrecemos el mejor diseño Web adaptado a sus necesidades y gustos. Compártenos un poco de tu problemática o tus necesidades y nosotros te ofreceremos la mejor atención personalizada en el mercado. Contamos con todo tipo de servicios tecnológicos.Somos expertos en ofrecer las mejores soluciones digitales. Ofrecemos el mejor diseño Web adaptado a su negocio. Brindamos la mejor atención personalizada en el mercado.">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-    <title>WebPageName</title>
+    <link rel="shortcut icon" href="logo.png"/>
+    <title>DevSupport - Ofrecemos las mejores soluciones digitales & desarrollo de paginas web</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156797976-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-156797976-1');
+    </script>
+
 </head>
 <body>
     <header class="main-header">
-        <div class="logo"></div>
-
+        <a href="./index.html"><div class="logo"></div></a>
         <input type="checkbox" class="menu-btn" id="menu-btn">
         <label for="menu-btn" class="menu-icon">
             <span class="menu-icon__line"></span>
         </label>
-        
         <ul class="nav-links">
             <li class="nav-link">
                 <a href="#inicio">Inicio</a>
             </li>
             <li class="nav-link">
-                <a href="#acerca-de">Acerca-de</a>
+                <a href="#acerca-de">Acerca de</a>
             </li>
             <li class="nav-link">
-                <a href="#servicios">Servicios</a>
+                <div class="phone-view">
+                    <a href="./services.html">Servicios</a>
+                </div>
+                <div class="full-view">
+                    <a href="#servicios">Servicios</a>
+                </div>
             </li>
             <li class="nav-link">
                 <a href="#etapas">Etapas</a>
@@ -48,96 +65,91 @@
             <div class="box">
                 <div class="content">
                     <i class="fas fa-users"></i>
-                    <h2 class="title">Quienes somos?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nemo? Corporis nemo ea veniam, magni quis soluta, autem rerum libero, doloremque nam alias impedit sint! Ea laborum itaque voluptatem expedita.</p>    
+                    <h2 class="title">¿Quiénes somos?</h2>
+                    <p>Somos ingenieros enfocados al desarrollo de software, sitios web, soporte técnico, mantenimiento entre otros servicios relacionados a el área de sistemas. Tenemos gran experiencia en el manejo y aplicación de los diferentes lenguajes de programación con los cuales podemos ofrecerle la mejor solución adaptada a sus necesidades y las de su negocio.</p>    
                 </div>
             </div>
         </div>
     </div>
-    
     <!--Hero imagen codigo con texto bajo el navbar-->
-    <div class="hero-code" >
-        <h1>"Nos encantaria formar parte de tu equipo de trabajo"</h1>
+    <div class="hero-code">
+        <h1>Nos encantaría formar parte de su equipo de trabajo</h1>
     </div>
-    <br id="servicios"> 
+    <br id="servicios">
 <!--Contenedor Servicios-->
-    <div class="container">
+    <div class="container" id="servicios">
         <div class="head-line">
             <h1>Servicios</h1>
         </div>
-        <div class="mul-container">
-            <div class="box focus">
-                <div class="content">
-                    <i class="fas fa-toolbox"></i>
-                    <h2>Mantenimiento de hardware</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, perspiciatis.</p>
-                    <a href="#">Ver mas</a>
+        <div class="phone-view">
+            <div class="mul-container">
+                <div class="box" >
+                    <div class="content">
+                        <i class="fas fa-laptop"></i>
+                        <h2>Servicios</h2>
+                        <p>Ponemos a su disposicion todo tipo de servicios de desarrollo, soporte, diseño y mantenimiento en el area tecnologica a su alcance y de manera personalizada para siempre cumplir con sus espectativas y que usted este conforme con el resultado.</p>
+                        <a href="/services.html"><b>Ver servicios</b><i class="far fa-arrow-alt-circle-right"></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="box focus">
-                <div class="content">
-                    <i class="fas fa-code"></i>
-                    <h2>Desarrollo</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, perspiciatis.</p>
-                    <a href="#">Ver mas</a>
+        </div>
+        <div class="full-view">
+            <div class="mul-container">
+                <div class="box">
+                    <div class="content">
+                        <i class="fas fa-toolbox"></i>
+                        <h2>Mantenimiento de hardware</h2>
+                        <p>Realizamos el mantenimiento a todos sus equipos de computo para que siempre trabajen de manera optima y brindarle mayor durabilidad a su producto.</p>
+                    </div>
                 </div>
-            </div>
-<!--
-            <div class="box focus">
-                <div class="content">
-                    <i class="fas fa-laptop"></i>
-                    <h2>Arrendamiento</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, perspiciatis.</p>
-                    <a href="#">Ver mas</a>
+                <div class="box">
+                    <div class="content">
+                        <i class="fas fa-code"></i>
+                        <h2>Desarrollo</h2>
+                        <p>Nosotros podemos realizar las modificaciones correspondientes a su sitio web para que se encuentre siempre actualizado y que siempre luzca de la manera que a usted mas le agrade.</p>
+                    </div>
                 </div>
-            </div>
-        -->
-            <div class="box focus">
-                <div class="content">
-                    <i class="fas fa-laptop-code"></i>
-                    <h2>Diseño web</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, perspiciatis.</p>
-                    <a href="#">Ver mas</a>
+                <div class="box">
+                    <div class="content">
+                        <i class="fas fa-laptop-code"></i>
+                        <h2>Diseño web</h2>
+                        <p>Elaboramos el mejor diseño para su sitio web, permitiéndole a usted formar parte de este proceso para que quede totalmente satisfecho con el trabajo realizado y que este sea este diseñado acorde con el giro de su negocio.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="box focus">
-                <div class="content">
-                    <i class="fas fa-hands-helping"></i>
-                    <h2>Consultoria</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, perspiciatis.</p>
-                    <a href="#">Ver mas</a>
+                <div class="box">
+                    <div class="content">
+                        <i class="fas fa-hands-helping"></i>
+                        <h2>Consultoría</h2>
+                        <p>Ofrecemos optimizaciones, actualizaciones y soluciones a sistemas creados y/o nuevas propuestas de desarrollo para mejorar los procesos de su empresa siendo tanto equipos de computo como software.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="box focus">
-                <div class="content">
-                    <i class="fas fa-server"></i>
-                    <h2>Instalación de site</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, perspiciatis.</p>
-                    <a href="#">Ver mas</a>
+                <div class="box">
+                    <div class="content">
+                        <i class="fas fa-server"></i>
+                        <h2>Instalación de racks</h2>
+                        <p>Llevamos a cabo instalación de todo tipo de racks para su servidor de la misma manera realizamos cableado estructurado en su empresa, con lo cual le garantizamos que su sistema tenga un optimo desempeño en su negocio y brindarle a el mismo un optimo ambiente de trabajo.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="box focus">
-                <div class="content">
-                    <i class="far fa-file-code"></i>
-                    <h2>Mantenimiento web</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, perspiciatis.</p>
-                    <a href="#">Ver mas</a>
+                <div class="box">
+                    <div class="content">
+                        <i class="far fa-file-code"></i>
+                        <h2>Mantenimiento web</h2>
+                        <p>Somos su mejor opción para realizar las modificaciones correspondientes a su sitio web para que se encuentre siempre actualizado y que siempre luzca de la manera que a usted mas le agrade.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="box focus">
-                <div class="content">
-                    <i class="fas fa-headset"></i>
-                    <h2>Soporte tecnico</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, perspiciatis.</p>
-                    <a href="#">Ver mas</a>
+                <div class="box">
+                    <div class="content">
+                        <i class="fas fa-headset"></i>
+                        <h2>Soporte técnico</h2>
+                        <p>Brindamos un servicio de soporte técnico personalizado a todo su equipo de computo, de esta manera garantizamos que su negocio funcione de manera correcta todo el tiempo, podemos resolver todo tipo de problemas relacionados con el área de computo, siempre ofreciéndole las mejores soluciones a su negocio.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="box focus">
-                <div class="content">
-                    <i class="fas fa-magic"></i>
-                    <h2>Diseño</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, perspiciatis.</p>
-                    <a href="#">Ver mas</a>
+                <div class="box">
+                    <div class="content">
+                        <i class="fas fa-video"></i>
+                        <h2>Vídeovigilancia</h2>
+                        <p>Contamos con el servicio de instalación de sistemas de videovigilancia de alta calidad mediante el cual usted podra tener mayor seguridad en su negocio e incluso administrarlo y visualizarlo desde su dispositivo móvil.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -152,40 +164,36 @@
             <div class="box">
                 <div class="content">
                     <i class="fas fa-chart-line"></i>
-                    <h2>Analisis</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, perspiciatis.</p>
-                    <a href="#">Ver mas</a>
+                    <h2>Análisis</h2>
+                    <p>Se debe definir los objetivos para su página web. Cada giro comercial tiene su nicho específico que se tiene que estudiar detalladamente para poder generar una solución optima.</p>
                 </div>
             </div>
             <div class="box">
                 <div class="content">
                     <i class="fas fa-pencil-ruler"></i>
                     <h2>Diseño</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, perspiciatis.</p>
-                    <a href="#">Ver mas</a>
+                    <p>Nuestro diseño está pensado en la comodidad de los usuarios y optimizado para dispositivos móviles además de incorporar el toque especial de nuestros clientes dado a que nuestro trabajo lo realizamos a su gusto.</p>
                 </div>
             </div>
             <div class="box">
                 <div class="content">
                     <i class="fas fa-terminal"></i>
                     <h2>Desarrollo</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, perspiciatis.</p>
-                    <a href="#">Ver mas</a>
+                    <p>Con las mejores tecnicas de desarrollo web te entregamos una página rápida y segura adaptada a su negocio y las necesidades que tiene. Nosotros trabajamos siempre de la mano de nuestros clientes para ofrecer una optima atención y que siempre estén conformes.</p>
                 </div>
             </div>
             <div class="box">
                 <div class="content">
                     <i class="fas fa-cloud-upload-alt"></i>
                     <h2>Despliegue</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, perspiciatis.</p>
-                    <a href="#">Ver mas</a>
+                    <p>Una vez que se finalizan las etapas satisfactoriamente y el cliente esta satisfecho se realiza la etapa de despliegue que consiste en poner en línea su proyecto y que funcione en su totalidad.</p>
                 </div>
             </div>
         </div>
     </div>
     <!--Hero imagen codigo con texto bajo el navbar-->
     <div class="hero-code">
-        <h1>Tu satisfacción es nuestro principal objetivo</h1>
+        <h1>Su satisfacción es nuestro principal objetivo</h1>
     </div>
     <br id="contacto">
     <!--Contenedor contacto-->
@@ -196,60 +204,45 @@
         <div class="container">
             <div class="box">
                 <div class="content">
-                    <i class="fas fa-star-of-life"></i>
-                    <h2 class="title">Contamos con soporte 24/7</h2>
+                    <h2 class="title">Contamos con soporte vía WhatsApp y telefónica</h2>
                     <div class="contact">
-                        <p>Via Whatsapp y telefonica</p>
                         <i class="fab fa-whatsapp"></i>
-                        
-                        33-22-24-78-44
-                    </div>
-                    <p>Para nosotros siempre es un placer atenderte y brindarte nuestra mejor asistencia personalizada, solucionando todos tus inconvenientes de manera eficiente y veloz.</p>    
+                        <a href="tel:+33-22-24-78-44">33-22-24-78-44</a>
+                  </div>
+                    <p>Para nosotros siempre es un placer atenderle y brindarle nuestra mejor asistencia personalizada, solucionando todos sus inconvenientes de manera eficiente y veloz.</p>    
                 </div>
             </div>
         </div>
     </div>
-
-    <!--Form datos ¡¡¡¡AUN NO ES RESPONSIVE!!!!-->
+    <!--Form datos-->
     <div class="container">
-        <h2>Tambien puedes dejarnos tus datos y nosotros nos pondremos en contacto contigo</h2>
-        <form action="/send-email" method="POST">
-            <div>
-                <p>Nombre:</p>
-                <input type="text" name="name" class="text-input" placeholder="Ingrese su nombre" required>
-            </div>
-            <div>
-                <p>Correo:</p>
-                <input type="email" name="email" class="text-input" placeholder="Ingrese su correo electronico" required>
-            </div>
-            <div>
-                <p>Telefono:</p>
-                <input type="number" name="phone" class="text-input" placeholder="Ingrese su numero telefonico" required>
-            </div>
-            <div>
-                <p>Giro de la empresa:</p>
+        <h2>Trabajemos en conjunto</h2>
+        <form action="/email.php" method="POST">
+                <input name="name" type="text" class="text-input" placeholder="Nombre" required>
+                <input type="email" name="email" class="text-input" placeholder="E-mail" required>
+                <input type="number" name="phone" class="text-input" placeholder="Telefono" required>
+                <p>Seleccione el giro de su empresa:</p>
                 <select name="enterprice" required>
                     <option value="">Selecionar...</option>
-                    <option value="Tecnologico">Tecnologico</option>
+                    <option value="Tecnologico">Tecnológico</option>
                     <option value="Ventas">Ventas</option>
-                    <option value="Ropa">Ropa</option>
                     <option value="Alimentos">Alimentos</option>
+                    <option value="Alimentos">Calzado</option>
+                    <option value="Alimentos">Musical</option>
+                    <option value="Alimentos">Construcción</option>
+                    <option value="Alimentos">Escolar</option>
+                    <option value="Alimentos">Servicios</option>
+                    <option value="Alimentos">Otro</option>
                 </select>
-            </div>
-            <div>
-                <p>Describa de manera breve su proyecto a continuación:</p>
-                <textarea name="description"></textarea>
-            </div>
-            <input type="submit" value="Confirmar">
+                <textarea name="description" placeholder="Describa de manera breve su proyecto"></textarea>
+            <input type="submit" value="Enviar correo">
         </form>
     </div>
-
     <footer>
         <div>
-            <label> <b>&copy; 2020 &nbsp;</b>DigitalSupport&nbsp;</label>
+            <label> <b>&copy; 2020 &nbsp;</b>DevSupport&nbsp;</label>
             <b>Todos los derechos reservados</b>
         </div>
     </footer>
-
 </body>
 </html>

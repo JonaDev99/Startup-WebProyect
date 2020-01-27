@@ -1,29 +1,56 @@
 form{
     input{
-        width: 100%;
-        padding: 10px 20px;
-        margin: 8px 0;
-        border-radius: 10px;
-        
+        width: 65%;
+        margin: 20px 0;
+        padding: 20px 0;
+        border: none;
+        background-color: $whitesmoke;
+        font-size: 15px;
+
+        &::placeholder{
+            color: $gray;
+            font-size: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
         &[type=submit]{
             cursor: pointer;
+            width: 35%;
+            padding: 15px 0;
+            font-weight: bold;
+            background: $darkgray;
+            color: $whitesmoke;
 
             &:hover{
-                background-color: $darkgray;
+                background: $gray;
                 color: $whitesmoke;
-                transition: 1s;
+                transition: .5s;
             }
         }
     }
     select{
-        width: 100%;
-        padding: 10px 20px;
-        margin: 8px 0;
-        border-radius: 10px;
+        background-color: $whitesmoke;
+        width: 65%;
+        padding: 15px 20px;
+        margin: 0 0 30px 0;
+        color: $gray;
+        font-size: 15px;
+        font-weight: bold;
     }
     textarea{
-        width: 100%;
+        width: 65%;
         height: 100px;
-        border-radius: 10px;
+        outline-style: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        background-color: $whitesmoke;
+        border: none;
+
+        &::placeholder{
+            color: $gray;
+            font-size: 15px;
+            font-weight: bold;
+        }
     }
 }

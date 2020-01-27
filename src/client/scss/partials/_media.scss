@@ -1,4 +1,10 @@
-@media screen and (max-width: 824px){
+
+@media screen and (min-width: 750px){
+    .phone-view{
+        display: none;
+    }
+}
+@media screen and (max-width: 890px){
     //_header.scss
     .main-header{
         .menu-icon{
@@ -20,14 +26,14 @@
         .nav-links{
             position: absolute;
             top: 0;
-            left: 0;
+            right: 0;
             opacity: 0;
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
             padding: 10rem 0;
-            width: 100vw;
-            height: 60vh;
+            width: 0;
+            height: 0;
             font-size: 1rem;
             color: #fff;
             background: rgba(0,0,0,.9);
@@ -35,11 +41,13 @@
             opacity .8s .5s,
             clip-path 1s .5s;
             clip-path: circle(200px at top right);
+            transition: .2s;
             .nav-link{
                 opacity: 0;
                 transform: translateX(100%);
                 width: 100%;
                 text-align: center;
+                transition: .3s;
                 a{
                     display: block;
                     padding: 2rem 0;
@@ -49,6 +57,8 @@
         .menu-btn:checked ~ .nav-links{
             opacity: 1;
             clip-path: circle(100% at center);
+            height: 100vh;
+            width: 100vw;
             .nav-link{
                 opacity: 1;
                 transform: translateX(0);
@@ -57,19 +67,19 @@
                     transform .6s cubic-bezier(0.175,0.885,0.32,1.275);
 
                 &:nth-of-type(1){
-                    transition-delay: .6s;
+                    transition-delay: .5s;
                 }
                 &:nth-of-type(2){
-                    transition-delay: .7s;
+                    transition-delay: .6s;
                 }
                 &:nth-of-type(3){
-                    transition-delay: .8s;
+                    transition-delay: .7s;
                 }
                 &:nth-of-type(4){
-                    transition-delay: .9s;
+                    transition-delay: .8s;
                 }
                 &:nth-of-type(5){
-                    transition-delay: 1s;
+                    transition-delay: .9s;
                 }    
             }
         }
@@ -79,7 +89,7 @@
 
             .menu-icon__line{
                 background: #fff;
-                animation: openMid 0.8s forwards;
+                display: none;//Animacion de cruz eliminada
                 &::before{
                     background: #fff;
                     animation: openTop 0.8s forwards;
@@ -97,7 +107,8 @@
 
     //_hero.scss
     .hero-head, .hero-code{
-        height: 40vh;
+        height: 35vh;
+        //background-attachment: local;
         h1{
             font-size: .9rem;
         }
@@ -106,6 +117,12 @@
         
     //_container.scss
     .container{
+        h1{
+            font-size: 20px;
+        }
+        h2{
+            font-size: 18px;
+        }
         .box{
             .content{
                 .title{
@@ -122,6 +139,9 @@
                 h2{
                     font-size: .9rem;
                 }
+                p{
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -136,6 +156,7 @@
         }
     }
     /***************/
+
     
     @media screen and (min-width: 760px){
         /*headline.scss*/
@@ -147,6 +168,19 @@
             }
         }
         /***************/
+        }
+        @media screen and (max-width: 750px){
+            .full-view{
+                display: none;
+            }
+            .phone-view{
+                display: inline;
+                margin: auto;
+            }
+            .hero-head, .hero-code{
+                height: 35vh;
+                background-attachment: local;
+            }
         }
 
 }

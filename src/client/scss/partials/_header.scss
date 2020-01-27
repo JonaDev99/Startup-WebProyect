@@ -11,7 +11,15 @@
     //Este es el tamaño y color de la navbar
     background: rgba(0,0,0,0.4);
     color: #fff;
-    transition: 0.4s ease-out;
+    transition: 0.3s ease-out;
+    .logo{
+        background: url('../assets/images/DevSupport.png') no-repeat top left / cover ;
+        padding: 15px 0 0 0;
+        margin: 0;
+        width: 240px;
+        height: 65px;
+        cursor: pointer;
+    }
     a{
         text-decoration: none;
         color: inherit;
@@ -87,10 +95,14 @@
     }
 
     &.scrolled{
-        height: 65px;
+        height: 50px;
         background: rgba(0,0,0,0.8);
         color: #fff;
-
+        .logo{
+        width: 170px;
+        height: 46px;
+        transition: 1s;
+        }
         .menu-icon{
             &__line,
             &__line::before,

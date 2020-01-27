@@ -18,13 +18,17 @@ var cont = 0;
 window.addEventListener('click', (e) => {   
     if (document.getElementById('menu-btn').contains(e.target)){
         cont ++;
-        //console.log("Click dentro");
+        //console.log("Click dentro", cont);
         if(cont%2 == 0){
             menuBtn.checked = false;
             cont = 0;
         }
+        /**Con este else obligamos a que se seleccione una opción */
+        else{
+            cont = 0;
+        }
     } else{
-        //console.log("Click fuera");
+        //console.log("Click fuera", cont);
         menuBtn.checked = false;
     }
   });
